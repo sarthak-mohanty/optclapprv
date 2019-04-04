@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#30EFEBEE"
+
+                    android:padding="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Consumer Name:"
+                            android:textSize="20dp"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:background="@drawable/edittext_edit"
+                            android:padding="5dp"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            android:id="@+id/consumer_name_edit"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Meter Number:"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:background="@drawable/edittext_edit"
+                            android:padding="5dp"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            android:id="@+id/meter_number"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginRight="2dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Initial Reading:"
+                                    android:textSize="20dp"/>
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:background="@drawable/edittext_edit"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:imeOptions="actionNext"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:id="@+id/initial_reading"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="3dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Type"
+                                    android:textSize="20dp"/>
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:background="@drawable/edittext_edit"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:maxLines="1"
+                                    android:inputType="text"
+                                    android:id="@+id/type"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Terminal Cover Seal No:"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:background="@drawable/edittext_edit"
+                            android:padding="5dp"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="1"
+                            android:id="@+id/TCSN"
+                            android:inputType="text"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginRight="2dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Make:"
+                                    android:textSize="20dp"/>
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:background="@drawable/edittext_edit"
+                                    android:padding="5dp"
+                                    android:id="@+id/make"
+                                    android:layout_marginTop="2dp"
+                                    android:imeOptions="actionNext"
+                                    android:maxLines="1"
+                                    android:inputType="text"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="3dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Max Digit"
+                                    android:textSize="20dp"/>
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:background="@drawable/edittext_edit"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:imeOptions="actionNext"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:id="@+id/max_digit"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Capacity"
+                                    android:textSize="20dp"/>
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:background="@drawable/edittext_edit"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:id="@+id/capacity"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TP1 Seal Number :"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:background="@drawable/edittext_edit"
+                            android:padding="5dp"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="1"
+                            android:id="@+id/tp1_seal_number"
+                            android:inputType="text"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TP2 Seal Number"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:id="@+id/tp2_seal_number"
+                            android:background="@drawable/edittext_edit"
+                            android:padding="5dp"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="1"
+                            android:inputType="text"/>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_margin="5dp"
+                           android:layout_marginTop="20dp"
+                           android:paddingBottom="10dp">
+
+                           <Button
+                               android:layout_width="match_parent"
+                               android:layout_height="35dp"
+                               android:background="@drawable/button_edit"
+                               android:text="SUBMIT"
+                               android:layout_weight="1"
+                               android:layout_marginLeft="3dp"
+                               android:layout_marginTop="15dp"
+                               android:layout_marginBottom="5dp"
+                               android:textColor="#FDFDFE"
+                               android:id="@+id/submit"/>
+                       </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </ScrollView>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
